@@ -25,7 +25,7 @@ unset GIT_DIR
 # Provide hook to deal with errors
 trap build_failed ERR
 
-
+info "Looking for $build_dir/conf/_nginx.cfg" 
 if [ -f $build_dir/conf/_nginx.cfg ]; then
   source $build_dir/conf/_nginx.cfg
 fi
